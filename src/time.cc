@@ -7,7 +7,7 @@
 using namespace node;
 using namespace v8;
 
-#ifdef WIN64
+#ifdef _WIN64
 #define tzname    _tzname
 #define timezone  _timezone
 #define daylight  _daylight
