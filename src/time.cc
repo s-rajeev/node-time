@@ -7,6 +7,12 @@
 using namespace node;
 using namespace v8;
 
+#ifdef WIN64
+#define tzname    _tzname
+#define timezone  _timezone
+#define daylight  _daylight
+#endif
+
 class Time {
   public:
   static void Init(Handle<Object> target) {
